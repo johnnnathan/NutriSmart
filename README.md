@@ -1,70 +1,80 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Grocery List App
 
-## Available Scripts
+## Overview
+The **Grocery List App** is a platform designed to simplify grocery shopping and nutritional analysis. It allows users to easily analyze the macronutrient profile of food items and make healthier choices. The app is built with a user-friendly interface and offers AI-driven features for enhanced functionality.
 
-In the project directory, you can run:
+## Features
+- **Smart Grocery List**: Allows users to create, modify, and view grocery lists.
+- **Nutritional Analysis**: Provides detailed nutritional information about food items.
+- **AI-Driven Food Categorization**: Uses an AI model to suggest additional categories for food items based on their names.
+- **Scoring System**: Food items are scored based on their nutritional profiles, similar to the Dutch Nutri-Score system. The scoring system ranges from A to D.
 
-### `npm start`
+## Technologies Used
+- **Frontend**: React.js
+- **Backend**: Python (Flask for API)
+- **AI Model**: Rule-based AI system for nutritional scoring and category suggestions
+- **Database**: Local JSON or API-based storage for food data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Clone the Repository
+```bash
+git clone https://github.com/Amir-Mohseni/grocery-list-app
+```
 
-### `npm test`
+### Install Dependencies
+1. Navigate tot he project directory: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd grocery-list-app
+```
+2. Install Python Dependencies:
+```bash 
+pip install -r src/requirements.txt
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install Node.js dependencies for the frontend:
+```bash 
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Setup and Run the Application 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the backend server for the scoring system:
+```bash 
+python src/food_rater.py
+```
 
-### `npm run eject`
+2. Start the React Application:
+```bash 
+npm start
+```
+This will open the application in your default browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## How to Use
+1. **Create a Grocery List**: Add items to your list by typing their names into the search bar.
+2. **View Nutritional Information**: After adding an item to the list, click on it to view its nutritional profile.
+3. **AI Food Categorization**: The app suggests possible categories for each food item based on its name and nutritional profile.
+4. **Scoring System**: Each food item is rated from A to D based on its nutritional value. The higher the score, the healthier the item.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Future Improvements
+- **Augmented Reality (AR) Integration**: To allow real-time food identification via a front-facing camera.
+- **Enhanced AI Features**: More advanced AI models for food categorization and personalized recommendations.
+- **Mobile Application**: Porting the app to mobile platforms for on-the-go use.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributors
+- **Amir Mohseni**: Main developer
+- **Dimitrios Tsiplakis**: AI model and backend development
 
-### Code Splitting
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+- **Nutri-Score System**: The scoring system is inspired by the Dutch Nutri-Score system.
+- **Shapley Additive Explanations (SHAP)**: For the AI model transparency and explainability.
