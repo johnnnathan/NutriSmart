@@ -69,8 +69,8 @@ This will open the application in your default browser.
 - **Mobile Application**: Porting the app to mobile platforms for on-the-go use.
 
 ## Contributors
-- **Amir Mohseni**: Main developer
-- **Dimitrios Tsiplakis**: AI model and backend development
+- **Amir Mohseni**
+- **Dimitrios Tsiplakis**
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
